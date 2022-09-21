@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+background: url(https://wallpaperaccess.com/full/5580296.png);
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+    margin-top: 50px;
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;
+}
+
+a{
+   text-decoration: none;
+}
+.center{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+}
+
+button{
+    font-size: 40px;
+    border-radius: 12px ;
+    width: 168px;
+    margin: 20px;
+    background-color: silver;
+    color: white;
+}
+button:hover{
+    color: white;
+    background-color: skyblue;
+}
