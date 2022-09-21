@@ -46,3 +46,20 @@ button:hover{
     color: white;
     background-color: skyblue;
 }
+
+.play{
+    text-align: center;
+    max-width: 80px;
+    margin : 0 auto;
+    border-radius: 12px;
+}
+
+a{text-decoration: none;
+color: white;
+font-size: 20px;}
+
+.play:hover{
+    color: white;
+    background-color: skyblue;
+
+}
