@@ -6,11 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winner</title>
     <link rel="stylesheet" href="../static/style.css">
+    <script src="https://kit.fontawesome.com/c826e5623e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1> {{shaun}} is winner</h1>
-    <p>computer: {{computer}}</p>
-    <p> player :{{player_move}}</p>
 
+    {% if player_move == computer and computer == player_move %}
+    <h1> This is a Tie!!</h1>
+    {%else%}
+    <h1> {{shaun}} is Winner!</h1>
+
+    {% endif%}
+
+
+
+    {% if player_move == 'rock' and computer == 'paper' %}
+    <h1> Player:<i class="fa-solid fa-hand-back-fist"></i>  computer:<i class="fa-regular fa-hand"></i></h1>
+    {% elif player_move == 'paper' and computer == 'scissors' %}
+    <h1> Player:<i class="fa-regular fa-hand"></i> Computer:<i class="fa-solid fa-hand-scissors"></i> </h1>
+    {% elif player_move == 'scissors' and computer == 'rock'  %}
+    <h1>Player:<i class="fa-solid fa-hand-scissors"></i>  Computer: <i class="fa-solid fa-hand-back-fist"></i></h1>
+    {% elif computer == 'rock' and player_move == 'paper' %}
+    <h1> Computer:<i class="fa-solid fa-hand-back-fist"></i>  Player:<i class="fa-regular fa-hand"></i></h1>
+    {% elif computer == 'paper' and player_move == 'scissors' %}
+    <h1> Computer:<i class="fa-regular fa-hand"></i> Player:<i class="fa-solid fa-hand-scissors"></i> </h1>
+    {% elif computer == 'scissors' and player_move == 'rock'  %}
+    <h1>Computer:<i class="fa-solid fa-hand-scissors"></i>  Player: <i class="fa-solid fa-hand-back-fist"></i></h1>
+   
+   
+   
+    {% endif %}
+
+
+
+   
 </body>
 </html>
