@@ -10,12 +10,7 @@
 </head>
 <body>
 
-    {% if player_move == computer and computer == player_move %}
-    <h1> This is a Tie!!</h1>
-    {%else%}
-    <h1> {{shaun}} is Winner!</h1>
-
-    {% endif%}
+   
 
 
 
@@ -35,6 +30,14 @@
    
    
     {% endif %}
+
+
+    {% if player_move == computer and computer == player_move %}
+    <h1> This is a Tie!!</h1>
+    {%else%}
+    <h1> {{shaun}} is Winner!</h1>
+
+    {% endif%}
 
 <div class="play">
     <a href="{{url_for('index')}}"><h3>Play again</h3></a>
